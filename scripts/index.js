@@ -4,8 +4,10 @@ const giftbox = document.getElementById('merrywrap');
 const canvasC = document.getElementById('c');
 
 const config = {
-  birthdate: 'Jan 07, 2023',
-  name: 'Nguyễn Tuyết Linh'
+   birthdate: 'Jan 07, 2023',
+  name: 'Nguyễn Tuyết Linh',
+  wish1:'Chúc em mình tuổi mới thật là bùng nổ nhé.',
+  wish3: 'sớm lấy chồng trước Ngô Phương Anh giúp em Vy nhé!',
 };
 
 function hideEverything() {
@@ -50,7 +52,7 @@ x = setInterval(function () {
     hw = w / 2, // half-width
     hh = h / 2,
     opts = {
-      strings: ['HAPPY', 'BIRTHDAY!', config.name],
+      strings: ['HAPPY', 'BIRTHDAY!', config.name, config.wish1, config.wish3],
       charSize: 30,
       charSpacing: 35,
       lineHeight: 40,
